@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const TodoSchema = new Schema({
   task: String,
-  description: String
+  description: String,
+  complete: Boolean
 });
 
 const Todo = mongoose.model('Todo', TodoSchema);
